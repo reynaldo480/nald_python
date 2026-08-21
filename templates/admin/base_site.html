@@ -1,0 +1,163 @@
+{% extends "admin/base.html" %}
+
+{% block title %}Sari-Sari Store Admin{% endblock %}
+
+{% block branding %}
+<div id="site-name">
+    🛍️ <span>Sari-Sari Store</span>
+</div>
+{% endblock %}
+
+{% block extrastyle %}
+<style>
+
+    /* Overall page */
+    body {
+        background: #f5f5f7 !important;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    /* Header */
+    #header {
+        background: rgba(255,255,255,0.95) !important;
+        color: #111 !important;
+        padding: 18px 25px !important;
+        border-bottom: 1px solid #e5e5e5;
+        box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    }
+
+    #site-name {
+        font-size: 22px !important;
+        font-weight: 700;
+        color: #111 !important;
+    }
+
+    #site-name a {
+        color: #111 !important;
+    }
+
+    /* User links */
+    #user-tools {
+        color: #555 !important;
+        font-size: 13px;
+    }
+
+    #user-tools a {
+        color: #007aff !important;
+    }
+
+    /* Main content */
+    #content {
+        padding: 30px !important;
+    }
+
+    /* Dashboard modules */
+    .module {
+        background: white !important;
+        border-radius: 18px !important;
+        border: none !important;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+        overflow: hidden;
+        margin-bottom: 25px;
+    }
+
+    .module h2,
+    .module caption {
+        background: #007aff !important;
+        color: white !important;
+        padding: 15px 20px !important;
+        font-size: 15px !important;
+        border-radius: 0 !important;
+    }
+
+    .module table {
+        border-radius: 15px;
+    }
+
+    .module td,
+    .module th {
+        padding: 15px !important;
+    }
+
+    /* Links */
+    a {
+        color: #007aff !important;
+    }
+
+    /* Buttons */
+    input[type="submit"],
+    .button,
+    a.button {
+        background: #007aff !important;
+        border: none !important;
+        border-radius: 12px !important;
+        padding: 10px 18px !important;
+        font-weight: 600 !important;
+    }
+
+    input[type="submit"]:hover,
+    .button:hover {
+        background: #005ecb !important;
+    }
+
+    /* Add buttons */
+    .addlink {
+        color: #007aff !important;
+    }
+
+    /* Recent actions */
+    #content-related {
+        background: white;
+        border-radius: 18px;
+        padding: 20px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+
+    /* Forms */
+    input,
+    select,
+    textarea {
+        border-radius: 10px !important;
+        border: 1px solid #ddd !important;
+        padding: 10px !important;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+        border-color: #007aff !important;
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(0,122,255,0.15);
+    }
+
+    /* Mobile */
+    @media (max-width: 700px) {
+
+        #header {
+            padding: 15px !important;
+        }
+
+        #content {
+            padding: 15px !important;
+        }
+
+        #site-name {
+            font-size: 19px !important;
+        }
+
+        .module {
+            border-radius: 15px !important;
+        }
+
+        .module td,
+        .module th {
+            padding: 10px !important;
+        }
+
+        #content-related {
+            margin-top: 20px;
+        }
+    }
+
+</style>
+{% endblock %}
