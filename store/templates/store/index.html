@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sari-Sari Store</title>
+</head>
+<body>
+
+    <h1>🏪 My Sari-Sari Store</h1>
+
+    <h2>Product List</h2>
+
+    {% for product in products %}
+        <div>
+            <h3>{{ product.name }}</h3>
+            <p>Price: ₱{{ product.price }}</p>
+            <p>Stock: {{ product.quantity }}</p>
+        </div>
+        <hr>
+    {% empty %}
+        <p>No products yet.</p>
+    {% endfor %}
+
+</body>
+</html>
